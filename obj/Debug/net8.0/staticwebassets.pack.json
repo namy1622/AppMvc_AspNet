@@ -245,6 +245,38 @@
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
     },
     {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Earth.png",
+      "PackagePath": "staticwebassets/planet/Earth.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Jupiter.png",
+      "PackagePath": "staticwebassets/planet/Jupiter.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Mars.png",
+      "PackagePath": "staticwebassets/planet/Mars.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Mercury.png",
+      "PackagePath": "staticwebassets/planet/Mercury.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Neptune.png",
+      "PackagePath": "staticwebassets/planet/Neptune.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Saturn.png",
+      "PackagePath": "staticwebassets/planet/Saturn.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Uranus.png",
+      "PackagePath": "staticwebassets/planet/Uranus.png"
+    },
+    {
+      "Id": "/home/namsp/Documents/Net/MVC/AppMvc.Net/wwwroot/planet/Venus.png",
+      "PackagePath": "staticwebassets/planet/Venus.png"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AppMvc.Net.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

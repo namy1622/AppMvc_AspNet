@@ -87,6 +87,8 @@ namespace App.Controllers{
             return View("xinchao3", user);
         }
 
+
+        [AcceptVerbs("POST", "GET")]// chi duoc truy cap bang pt POST
         public IActionResult ViewProduct(int? id){
             var product = _productServie.Where(p => p.Id == id).FirstOrDefault();
             if(product == null){
