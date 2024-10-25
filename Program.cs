@@ -1,3 +1,4 @@
+using App.Services;
 using Microsoft.AspNetCore.Mvc.Razor;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddRazorPages();
+
+//--- Dang Ki Lop Nhu 1 Dich Vu -------------------------------
+builder.Services.AddSingleton<ProductService>();
+// cach khac
+// builder.Services.AddSingleton<ProductService, ProductService>();
+// builder.Services.AddSingleton(typeof(ProductService));
+// builder.Services.AddSingleton(typeof(ProductService), typeof(ProductService));
 
 //----------------------------------------------------------
 builder.Services.Configure<RazorViewEngineOptions>(options =>{

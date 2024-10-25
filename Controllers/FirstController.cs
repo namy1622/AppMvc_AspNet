@@ -1,13 +1,16 @@
+using App.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.Controllers{
     public class FirstController : Controller{
 
         private readonly ILogger<FirstController> _logger; // ij de co the su dung Log
-
+        private readonly ProductService _productServie;
         public static string ContentRootPath {set; get;}
-        public FirstController(ILogger<FirstController> logger,IWebHostEnvironment env){
+        public FirstController(ILogger<FirstController> logger,ProductService productSerVice,IWebHostEnvironment env){
             _logger = logger;
+
+            _productServie = productSerVice;
 
             ContentRootPath = env.ContentRootPath;
         }
@@ -55,9 +58,9 @@ namespace App.Controllers{
 
          // Redirect --> chuyen huong den trang web, trang trong local,...
         public IActionResult Privacy(){
-            var url = Url.Action("Privacy","Home"); // chuyen huong den Home/Privacy
-            _logger.LogInformation("Chuyen huong den " + url);
-            return LocalRedirect(url);
+            var local_url = Url.Action("Privacy","Home"); // chuyen huong den Home/Privacy
+            _logger.LogInformation("Chuyen huong den " + local_url);
+            return LocalRedirect(local_url);
         }
 
         public IActionResult Redirect(){
@@ -82,6 +85,36 @@ namespace App.Controllers{
             //return View((object)user);
             //---------
             return View("xinchao3", user);
+        }
+
+        public IActionResult ViewProduct(int? id){
+            var product = _productServie.Where(p => p.Id == id).FirstOrDefault();
+            if(product == null){
+                TempData["StatusMessage"] = "San pham ban tim khong co";
+                return Redirect(Url.Action("Index", "Home"));
+            }
+            //return Content($"San pham ID = {id}");
+
+            // /View/First/ViewProduct.csthml
+            // /MyView/First/ViewProduct.cshtml
+
+            // truyen bang  Model
+            //return View(product);
+
+            // truyen bang ViewData
+            // this.ViewData["product"] = product;
+            // return View("ViewProduct2");
+        
+
+
+            // truyen bang ViewBag
+            ViewBag.product = product;
+            return View("ViewProduct3");
+
+            //truyen data tu trang nay sang trang khac
+            // su dung TempData
+           // TempData["Thongbao"] = "...."
+
         }
 
     }

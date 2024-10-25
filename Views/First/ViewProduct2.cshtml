@@ -1,0 +1,13 @@
+@* @model App.Models.ProductModel *@
+
+@{
+    var product = ViewData["product"] as ProductModel;  // convert kieu sang ProductModel
+}
+
+<div class="card bg-primary text-white">
+    <h1 class="card-header">@product.Name</h1>
+    <p class="card-body cart-text">
+        Gia: @product.Price
+    </p>
+</div>
+<hr>
