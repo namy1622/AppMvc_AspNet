@@ -8,3 +8,32 @@
     <h1 class="display-4">Xin chao</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+@*  ----- Url ko co Area-------- *@
+<p>
+    @Url.ActionLink()
+</p>
+
+<p>
+    @Url.Action()
+</p>
+
+<p>
+    @Url.Action("Privacy")
+</p>
+
+<p>
+    @Url.Action("Privacy", new{id = 123, name= "namsp"})
+</p>
+<p>
+    @Url.Action("Jupiter", "Planet")
+</p>
+<p>
+    @Url.Action("PlanetInfo","Planet", new{id = 3})
+</p>
+
+@* --- Url co Area ------ *@
+
+<p>
+    @Url.Action("Index", "Product", new { area ="ProductManage", id = 123})
+</p>
