@@ -58,3 +58,4 @@
 /home/namsp/Documents/Net/MVC/AppMvc.Net/obj/Debug/net8.0/AppMvc.Net.pdb
 /home/namsp/Documents/Net/MVC/AppMvc.Net/obj/Debug/net8.0/AppMvc.Net.genruntimeconfig.cache
 /home/namsp/Documents/Net/MVC/AppMvc.Net/obj/Debug/net8.0/ref/AppMvc.Net.dll
+/home/namsp/Documents/Net/MVC/AppMvc.Net/obj/Debug/net8.0/AppMvc.Net.sourcelink.json
