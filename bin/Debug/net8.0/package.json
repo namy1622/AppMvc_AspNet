@@ -1,0 +1,23 @@
+{
+  "name": "appmvc.net",
+  "version": "1.0.0",
+  "description": "a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namy1622/AppMvc_AspNet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namy1622/AppMvc_AspNet/issues"
+  },
+  "homepage": "https://github.com/namy1622/AppMvc_AspNet#readme",
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-cli": "^3.0.0"
+  }
+}
