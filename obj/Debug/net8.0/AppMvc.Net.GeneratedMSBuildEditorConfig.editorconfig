@@ -26,6 +26,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/namsp/Documents/Net/MVC/AppMvc.Net
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/namsp/Documents/Net/MVC/AppMvc.Net/Areas/Database/Views/DbManage/DeleteDB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGF0YWJhc2UvVmlld3MvRGJNYW5hZ2UvRGVsZXRlREIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/namsp/Documents/Net/MVC/AppMvc.Net/Areas/Database/Views/DbManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGF0YWJhc2UvVmlld3MvRGJNYW5hZ2UvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/namsp/Documents/Net/MVC/AppMvc.Net/Areas/Database/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGF0YWJhc2UvVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/namsp/Documents/Net/MVC/AppMvc.Net/Areas/Database/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvRGF0YWJhc2UvVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/namsp/Documents/Net/MVC/AppMvc.Net/Areas/ProductManage/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvUHJvZHVjdE1hbmFnZS9WaWV3cy9Qcm9kdWN0L0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

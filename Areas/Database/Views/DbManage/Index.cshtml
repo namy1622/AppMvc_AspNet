@@ -1,0 +1,61 @@
+@using Microsoft.EntityFrameworkCore
+@using System.Data
+
+@inject AppDbContext dbContext
+
+@{
+    ViewData["Title"] = "Thong tin DB";
+    var connect = dbContext.Database.GetDbConnection();
+    var dbName = connect.Database;
+    var canConnect = dbContext.Database.CanConnect();
+
+    // truy cap vao Migrations - lay tt trong ds Migration
+        @* dbContext.Database.GetPendingMigrations();
+        dbContext.Database.GetAppliedMigrations(); *@
+}
+
+<partial name="_AlertMessage"/>
+
+<h1>Thong tin csdl</h1>    
+
+<p>- Database: @dbName</p>
+<p>- <Source>: @connect.DataSource</Source></p>
+<p>State: @connect.State</p>
+
+<h2>Migrations</h2>
+@foreach(var migration in dbContext.Database.GetAppliedMigrations()){
+    <p>@migration</p>
+}
+
+@foreach(var migration in dbContext.Database.GetPendingMigrations()){
+    <p>@migration (pending)</p>
+}
+
+@if(dbContext.Database.GetPendingMigrations().Any()){
+    <form method="post">
+        <button class="btn btn-success" asp-action="Migrate">
+            Tao DB(Cap nhat migrations)
+        </button>
+    </form>
+    
+}
+
+@if(!canConnect){
+    <p class="alert alert-danger">Khong co kha nang ket noi den Database</p>
+}
+
+@if(canConnect){
+    <h2>Cac Table</h2>
+    await dbContext.Database.OpenConnectionAsync();
+    var table = dbContext.Database.GetDbConnection().GetSchema("Tables");
+    <ul>
+        @foreach(System.Data.DataRow row in table.Rows){
+        <li>@row["TABLE_NAME"]</li>
+    }
+    </ul>
+
+    <a class="btn btn-danger" asp-action="DeleteDB">
+        Xoa Database
+    </a>
+    
+}
