@@ -18,9 +18,7 @@ builder.Services.AddControllersWithViews();
 
 // cau hinh chuoi ket noi den SqlServer
 builder.Services.AddDbContext<AppDbContext>(options =>{
-#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
-    string connectString = builder.Configuration.GetConnectionString("AppMvcConnectionString");
-#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
+    //string connectString = builder.Configuration.GetConnectionString("AppMvcConnectionString");
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppMvcConnectionString"));
 });
 

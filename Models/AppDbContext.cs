@@ -1,3 +1,4 @@
+using App.Models.Blog;
 using App.Models.Contacts;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -27,10 +28,20 @@ namespace App.Models{
                     entityType.SetTableName(tableName.Substring(6));
                 }
             }
+
+            // enity la doi tuong bieu dien category tren CSDL
+            modelBuilder.Entity<Category> (entity =>{
+                entity.HasIndex(c => c.Slug);
+
+                entity.HasOne(c => c.ParentCategory)
+                        .WithMany(c => c.CategoryChildren)
+                        .HasForeignKey(c => c.ParentCateoryId)
+                        .OnDelete(DeleteBehavior.Restrict); // Sử dụng Restrict để tránh xóa cascade
+            });
         }
 
         public DbSet<Contact> Contacts{set; get;}
 
-        
+        public DbSet<Category> Categories {set; get;}
     }
 }
