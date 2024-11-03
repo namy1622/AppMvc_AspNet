@@ -32,7 +32,7 @@ namespace App.Models.Blog
 
          // Categoty cha (Fkey)
         [DisplayName("Danh muc cha")]
-        public int? ParentCateoryId{get; set;}
+        public int? ParentCategoryId{get; set;}
 
         [ForeignKey("ParentCategoryId")]
         [DisplayName("Danh muc cha")]

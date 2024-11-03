@@ -106,10 +106,7 @@ namespace AppMvc.Net.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ParentCategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ParentCateoryId")
+                    b.Property<int?>("ParentCategoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Slug")
@@ -124,7 +121,7 @@ namespace AppMvc.Net.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ParentCateoryId");
+                    b.HasIndex("ParentCategoryId");
 
                     b.HasIndex("Slug");
 
@@ -303,8 +300,7 @@ namespace AppMvc.Net.Migrations
                 {
                     b.HasOne("App.Models.Blog.Category", "ParentCategory")
                         .WithMany("CategoryChildren")
-                        .HasForeignKey("ParentCateoryId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .HasForeignKey("ParentCategoryId");
 
                     b.Navigation("ParentCategory");
                 });

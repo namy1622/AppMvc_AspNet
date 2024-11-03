@@ -33,10 +33,11 @@ namespace App.Models{
             modelBuilder.Entity<Category> (entity =>{
                 entity.HasIndex(c => c.Slug);
 
-                entity.HasOne(c => c.ParentCategory)
-                        .WithMany(c => c.CategoryChildren)
-                        .HasForeignKey(c => c.ParentCateoryId)
-                        .OnDelete(DeleteBehavior.Restrict); // Sử dụng Restrict để tránh xóa cascade
+                // entity.HasOne(c => c.ParentCategory)
+                //         .WithMany(c => c.CategoryChildren)
+                //         .HasForeignKey(c => c.ParentCategoryId)
+                //         .OnDelete(DeleteBehavior.Restrict); // Sử dụng Restrict để tránh xóa cascade
+
             });
         }
 
