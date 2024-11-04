@@ -1,16 +1,26 @@
+<<<<<<< HEAD
 using App.Services;
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.Controllers{
     public class FirstController : Controller{
 
         private readonly ILogger<FirstController> _logger; // ij de co the su dung Log
+<<<<<<< HEAD
         private readonly ProductService _productServie;
         public static string ContentRootPath {set; get;}
         public FirstController(ILogger<FirstController> logger,ProductService productSerVice,IWebHostEnvironment env){
             _logger = logger;
 
             _productServie = productSerVice;
+=======
+
+        public static string ContentRootPath {set; get;}
+        public FirstController(ILogger<FirstController> logger,IWebHostEnvironment env){
+            _logger = logger;
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
 
             ContentRootPath = env.ContentRootPath;
         }
@@ -58,9 +68,15 @@ namespace App.Controllers{
 
          // Redirect --> chuyen huong den trang web, trang trong local,...
         public IActionResult Privacy(){
+<<<<<<< HEAD
             var local_url = Url.Action("Privacy","Home"); // chuyen huong den Home/Privacy
             _logger.LogInformation("Chuyen huong den " + local_url);
             return LocalRedirect(local_url);
+=======
+            var url = Url.Action("Privacy","Home"); // chuyen huong den Home/Privacy
+            _logger.LogInformation("Chuyen huong den " + url);
+            return LocalRedirect(url);
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
         }
 
         public IActionResult Redirect(){
@@ -87,6 +103,7 @@ namespace App.Controllers{
             return View("xinchao3", user);
         }
 
+<<<<<<< HEAD
 
         [AcceptVerbs("POST", "GET")]// chi duoc truy cap bang pt POST
         public IActionResult ViewProduct(int? id){
@@ -119,6 +136,8 @@ namespace App.Controllers{
 
         }
 
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
     }
 
        

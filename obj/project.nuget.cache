@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "oKERIyo6luU=",
   "success": true,
   "projectFilePath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
@@ -216,5 +217,11 @@
     "/home/namsp/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/home/namsp/.nuget/packages/system.windows.extensions/7.0.0/system.windows.extensions.7.0.0.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "kL8i6yv54ik=",
+  "success": true,
+  "projectFilePath": "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
   "logs": []
 }

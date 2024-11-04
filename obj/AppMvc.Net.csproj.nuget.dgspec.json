@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
         "packagesPath": "/home/namsp/.nuget/packages/",
         "outputPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/",
+=======
+    "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj": {}
+  },
+  "projects": {
+    "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj",
+        "projectName": "AppMvc.Net",
+        "projectPath": "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj",
+        "packagesPath": "/home/namsp/.nuget/packages/",
+        "outputPath": "/home/namsp/Documents/Net/MVC/AppMvc.Net/obj/",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/namsp/.nuget/NuGet/NuGet.Config"
@@ -42,6 +56,7 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+<<<<<<< HEAD
           "dependencies": {
             "MailKit": {
               "target": "Package",
@@ -144,6 +159,8 @@
               "version": "[4.8.6, )"
             }
           },
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
           "imports": [
             "net461",
             "net462",

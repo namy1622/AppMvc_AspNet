@@ -1,4 +1,5 @@
 ## Controller 
+<<<<<<< HEAD
 - la mot lop ke thua tu lop Controller : Microsoft.AspNetCore.Mvc.Controller
 - Action trong controller laf 1 pt public (ko duoc la static)
 - Action tra ve bat ki kdl nao, thuong la IActionResult
@@ -102,3 +103,6 @@ asp-controller="Product"
 asp-route...="123"
 asp-route="default"
 ```
+=======
+- la mot lop ke thua tu lop Controller : Microsoft.AspNetCore.Mvc.Controller
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd

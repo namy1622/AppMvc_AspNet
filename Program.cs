@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using System.Net;
 using App.Data;
 using App.ExtendMethods;
@@ -8,6 +9,9 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+=======
+using Microsoft.AspNetCore.Mvc.Razor;
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +20,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+<<<<<<< HEAD
 // cau hinh chuoi ket noi den SqlServer
 builder.Services.AddDbContext<AppDbContext>(options =>{
     //string connectString = builder.Configuration.GetConnectionString("AppMvcConnectionString");
@@ -32,6 +37,10 @@ builder.Services.AddSingleton<ProductService>();
 // builder.Services.AddSingleton(typeof(ProductService), typeof(ProductService));
 
 builder.Services.AddSingleton<PlanetService>();
+=======
+builder.Services.AddRazorPages();
+
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
 //----------------------------------------------------------
 builder.Services.Configure<RazorViewEngineOptions>(options =>{
     // /View/Controller/Action.cshtml
@@ -49,6 +58,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>{
 });
 //---------------------------------------------------------
 
+<<<<<<< HEAD
 //-------
 builder.Services.AddAuthorization(option =>{
     option.AddPolicy("ViewManageMenu", builder => {
@@ -131,6 +141,8 @@ builder.Services.AddAuthentication()
 builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
 //---------------
 
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
 var app = builder.Build();
  
  IWebHostEnvironment envProgram;
@@ -153,6 +165,7 @@ app.UseRouting();
 app.UseAuthentication(); // xac dinh danh tinhs 
 app.UseAuthorization(); // xac thuc quyen truy cap 
 
+<<<<<<< HEAD
 app.AddStatusCodePage(); // tuy bien response khi cos loi tu 400 - 599
 
 #pragma warning disable ASP0014 // Suggest using top level route registrations
@@ -221,3 +234,19 @@ app.Run();
     [HttpHead]
     [HttpPatch]
 */
+=======
+
+
+#pragma warning disable ASP0014 // Suggest using top level route registrations
+app.UseEndpoints(endpoint =>{
+    endpoint.MapControllerRoute(
+        name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+    endpoint.MapRazorPages();
+
+});
+#pragma warning restore ASP0014 // Suggest using top level route registrations
+
+app.Run();
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd

@@ -48,6 +48,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\image\image.png))">
       <SourceType>Package</SourceType>
       <SourceId>AppMvc.Net</SourceId>
@@ -64,6 +65,8 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\image\image.png))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>
       <SourceId>AppMvc.Net</SourceId>
@@ -992,6 +995,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt))</OriginalItemSpec>
     </StaticWebAsset>
+<<<<<<< HEAD
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\lib\multiple-select\multiple-select.css))">
       <SourceType>Package</SourceType>
       <SourceId>AppMvc.Net</SourceId>
@@ -1232,5 +1236,7 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\planet\Venus.png))</OriginalItemSpec>
     </StaticWebAsset>
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
   </ItemGroup>
 </Project>

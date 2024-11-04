@@ -1,22 +1,36 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "m/zvv5ByTUfLLbXTi0wfb/tDhHY0btsf9oSyJpdBtqk=",
   "Source": "AppMvc.Net",
   "BasePath": "_content/AppMvc.Net",
+=======
+  "Hash": "+hs9WD6SgMBfIRpbYXqlU57kQvFgowjkBu6RdqmIGKc=",
+  "Source": "App",
+  "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
+<<<<<<< HEAD
       "Name": "AppMvc.Net/wwwroot",
       "Source": "AppMvc.Net",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Name": "App/wwwroot",
+      "Source": "App",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/.nuget/packages/microsoft.aspnetcore.identity.ui/8.0.10/staticwebassets/V5/css/site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -1163,6 +1177,14 @@
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/AppMvc.Net",
       "RelativePath": "AppMvc.Net.styles.css",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/bundle/App.styles.css",
+      "SourceId": "App",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/App",
+      "RelativePath": "App.styles.css",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -1173,6 +1195,7 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/Debug/net8.0/scopedcss/bundle/AppMvc.Net.styles.css"
     },
     {
@@ -1182,6 +1205,17 @@
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/AppMvc.Net",
       "RelativePath": "AppMvc.Net.bundle.scp.css",
+=======
+      "OriginalItemSpec": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/bundle/App.styles.css"
+    },
+    {
+      "Identity": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/projectbundle/App.bundle.scp.css",
+      "SourceId": "App",
+      "SourceType": "Computed",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/App",
+      "RelativePath": "App.bundle.scp.css",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -1192,6 +1226,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/Debug/net8.0/scopedcss/projectbundle/AppMvc.Net.bundle.scp.css"
     },
     {
@@ -1200,6 +1235,16 @@
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "OriginalItemSpec": "/home/namsp/Documents/Net/MVC/App/obj/Debug/net8.0/scopedcss/projectbundle/App.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/css/site.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1214,11 +1259,19 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/favicon.ico",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/favicon.ico",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1233,6 +1286,7 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/image/image.png",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
@@ -1257,6 +1311,13 @@
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/js/site.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "js/site.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1271,11 +1332,19 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1290,11 +1359,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1309,11 +1386,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1328,11 +1413,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1347,11 +1440,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1366,11 +1467,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1385,11 +1494,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1404,11 +1521,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1423,11 +1548,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1442,11 +1575,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1461,11 +1602,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1480,11 +1629,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1499,11 +1656,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1518,11 +1683,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1537,11 +1710,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1556,11 +1737,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1575,11 +1764,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1594,11 +1791,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1613,11 +1818,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1632,11 +1845,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1651,11 +1872,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1670,11 +1899,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1689,11 +1926,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1708,11 +1953,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1727,11 +1980,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1746,11 +2007,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1765,11 +2034,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1784,11 +2061,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1803,11 +2088,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1822,11 +2115,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1841,11 +2142,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1860,11 +2169,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1879,11 +2196,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1898,11 +2223,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1917,11 +2250,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1936,11 +2277,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1955,11 +2304,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1974,11 +2331,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -1993,11 +2358,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2012,11 +2385,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2031,11 +2412,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2050,11 +2439,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2069,11 +2466,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2088,11 +2493,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2107,11 +2520,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/bootstrap/LICENSE",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/bootstrap/LICENSE",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2126,11 +2547,19 @@
       "OriginalItemSpec": "wwwroot/lib/bootstrap/LICENSE"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2145,11 +2574,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2164,11 +2601,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2183,11 +2628,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation/dist/additional-methods.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2202,11 +2655,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2221,11 +2682,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/additional-methods.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2240,11 +2709,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2259,11 +2736,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery-validation/LICENSE.md",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery-validation/LICENSE.md",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2278,11 +2763,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery/dist/jquery.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery/dist/jquery.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2297,11 +2790,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery/dist/jquery.min.js",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery/dist/jquery.min.js",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2316,11 +2817,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery/dist/jquery.min.map",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery/dist/jquery.min.map",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2335,11 +2844,19 @@
       "OriginalItemSpec": "wwwroot/lib/jquery/dist/jquery.min.map"
     },
     {
+<<<<<<< HEAD
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/jquery/LICENSE.txt",
       "SourceId": "AppMvc.Net",
       "SourceType": "Discovered",
       "ContentRoot": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/",
       "BasePath": "_content/AppMvc.Net",
+=======
+      "Identity": "/home/namsp/Documents/Net/MVC/App/wwwroot/lib/jquery/LICENSE.txt",
+      "SourceId": "App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/namsp/Documents/Net/MVC/App/wwwroot/",
+      "BasePath": "_content/App",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
       "AssetMode": "All",
@@ -2352,6 +2869,7 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+<<<<<<< HEAD
     },
     {
       "Identity": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/wwwroot/lib/multiple-select/multiple-select.css",
@@ -2637,6 +3155,8 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/planet/Venus.png"
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
     }
   ]
 }

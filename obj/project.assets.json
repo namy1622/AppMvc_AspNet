@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     "net8.0": {
       "Azure.Core/1.35.0": {
         "type": "package",
@@ -9729,6 +9730,13 @@
       "MimeKit >= 4.8.0",
       "System.Data.SqlClient >= 4.8.6"
     ]
+=======
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": []
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
   },
   "packageFolders": {
     "/home/namsp/.nuget/packages/": {}
@@ -9736,11 +9744,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
       "projectName": "AppMvc.Net",
       "projectPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
       "packagesPath": "/home/namsp/.nuget/packages/",
       "outputPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/",
+=======
+      "projectUniqueName": "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj",
+      "projectName": "AppMvc.Net",
+      "projectPath": "/home/namsp/Documents/Net/MVC/AppMvc.Net/AppMvc.Net.csproj",
+      "packagesPath": "/home/namsp/.nuget/packages/",
+      "outputPath": "/home/namsp/Documents/Net/MVC/AppMvc.Net/obj/",
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/namsp/.nuget/NuGet/NuGet.Config"
@@ -9771,6 +9787,7 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+<<<<<<< HEAD
         "dependencies": {
           "MailKit": {
             "target": "Package",
@@ -9873,6 +9890,8 @@
             "version": "[4.8.6, )"
           }
         },
+=======
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
         "imports": [
           "net461",
           "net462",

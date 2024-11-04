@@ -1,1 +1,26 @@
+<<<<<<< HEAD
 html{font-size:14px;position:relative;min-height:100%}@media (min-width:768px){html{font-size:16px}}.btn-link.nav-link:focus,.btn:active:focus,.btn:focus,.form-check-input:focus,.form-control:focus{box-shadow:0 0 0 .1rem #fff,0 0 0 .25rem #258cfb}body{margin-bottom:60px}.test{color:red}.app-navbar{background:rgba(0,0,0,.7)}.app-navbar .text-dark{color:#b9c3ce!important}.app-navbar .text-dark:hover{color:#fff!important}.app-navbar .navbar-brand{color:#a57dea}.app-navbar .navbar-brand:hover{color:#d727da!important}.contact-firstcol{background-color:#9854a0;color:#fff;text-align:center;border-top-left-radius:15px;border-bottom-left-radius:15px}.contact-firstcol h4{line-height:40px;font-weight:400;margin-top:20px}.contact-firstcol img{max-width:100px}.formcontact{font-weight:700}.formcontact .btn-primary{background-color:rgba(174,62,180,.5)!important}.formcontact .btn-primary:hover{background-color:#e31717!important}
+=======
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+>>>>>>> 8f201b5bde0b765474e40473f96c4c326c62d5bd
