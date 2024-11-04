@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj": {}
+    "D:\\NET\\MVC\\appMVC\\AppMvc.Net.csproj": {}
   },
   "projects": {
-    "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj": {
+    "D:\\NET\\MVC\\appMVC\\AppMvc.Net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
+        "projectUniqueName": "D:\\NET\\MVC\\appMVC\\AppMvc.Net.csproj",
         "projectName": "AppMvc.Net",
-        "projectPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/AppMvc.Net.csproj",
-        "packagesPath": "/home/namsp/.nuget/packages/",
-        "outputPath": "/home/namsp/Documents/Net/MVC/Clone/AppMvc_AspNet/obj/",
+        "projectPath": "D:\\NET\\MVC\\appMVC\\AppMvc.Net.csproj",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+        "outputPath": "D:\\NET\\MVC\\appMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/namsp/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -163,7 +166,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

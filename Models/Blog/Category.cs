@@ -13,22 +13,22 @@ namespace App.Models.Blog
         // Tieu de category
         [Required(ErrorMessage = "Phai co ten danh muc")]
         [StringLength(100, MinimumLength =3, ErrorMessage = "{0} phai tu {1} den {2} ki tu")]
-        public string Title {get; set;}
+        public  string Title {get; set;}
 
         //Noi dung, thong tin chi tiet ve Category
         [DataType(DataType.Text)]
         [DisplayName("Noi dung danh muc")]
-        public string Description{set; get;}
+        public  string Description{set; get;}
 
         //chuoi url
         [Required(ErrorMessage ="Phai tao url")]
         [StringLength(100, MinimumLength =3, ErrorMessage ="{0} dai {1} den {2}")]
         [RegularExpression(@"^[a-z0-9-]*$", ErrorMessage ="Chi dung cac ki tu [a-z,0-9-]")]
         [DisplayName("Url hien thi")]
-        public string Slug{set; get;}
+        public  string Slug{set; get;}
 
         // cac Category con
-        public ICollection<Category> CategoryChildren{set; get;}
+        public  ICollection<Category> CategoryChildren{set; get;}
 
          // Categoty cha (Fkey)
         [DisplayName("Danh muc cha")]
@@ -36,6 +36,11 @@ namespace App.Models.Blog
 
         [ForeignKey("ParentCategoryId")]
         [DisplayName("Danh muc cha")]
-        public Category ParentCategory{set; get;}
+        public  Category ParentCategory{set; get;}
+
+        internal void ChildCategoryIDs(object value, List<int> ids)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

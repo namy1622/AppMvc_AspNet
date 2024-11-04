@@ -37,3 +37,11 @@
 <p>
     @Url.Action("Index", "Product", new { area ="ProductManage", id = 123})
 </p>
+
+<textarea name="" id="sumernoteEditor"></textarea>
+
+@{
+    var summernote = new App.Models.Summernote("#sumernoteEditor");
+    
+}
+<partial name="_Summernote" model="summernote"/>

@@ -46,5 +46,9 @@ namespace App.Utilities
       }
     }
 
-  }
+        internal static object? GenerateSlug(object title)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

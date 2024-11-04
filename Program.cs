@@ -1,9 +1,11 @@
 using System.Net;
 using App.Data;
 using App.ExtendMethods;
+using App.Menu;
 using App.Models;
 using App.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.EntityFrameworkCore;
@@ -99,6 +101,10 @@ builder.Services.AddOptions();
 var mailsetting = builder.Configuration.GetSection("MailSettings");
 builder.Services.Configure<MailSettings>(mailsetting);
 builder.Services.AddSingleton<IEmailSender, SendMailService>();
+
+ // Đăng ký IActionContextAccessor
+builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+builder.Services.AddTransient<AdminSidebarService>();
 //
 // gọi dv google,facebook
 builder.Services.AddAuthentication()

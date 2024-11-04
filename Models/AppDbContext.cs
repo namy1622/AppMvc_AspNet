@@ -1,5 +1,6 @@
 using App.Models.Blog;
 using App.Models.Contacts;
+// using App.Models.Product;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -44,5 +45,12 @@ namespace App.Models{
         public DbSet<Contact> Contacts{set; get;}
 
         public DbSet<Category> Categories {set; get;}
+        public DbSet<Post> Posts { get; set; }
+
+       // public DbSet<PostCategory> PostCategories { get; set; }
+
+       //  public DbSet<ProductCategoryProduct>  ProductCategoryProducts { get; set; }
+
+      //  public DbSet<ProductPhoto> ProductPhotos { get; set; }
     }
 }
