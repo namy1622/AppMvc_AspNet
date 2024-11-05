@@ -312,3 +312,6 @@ D:\NET\MVC\appMVC\obj\Debug\net8.0\AppMvc.Net.genruntimeconfig.cache
 D:\NET\MVC\appMVC\obj\Debug\net8.0\ref\AppMvc.Net.dll
 D:\NET\MVC\appMVC\bin\Debug\net8.0\appsettings.json
 D:\NET\MVC\appMVC\bin\Debug\net8.0\Bogus.dll
+D:\NET\MVC\appMVC\bin\Debug\net8.0\elFinder.NetCore.dll
+D:\NET\MVC\appMVC\bin\Debug\net8.0\SixLabors.ImageSharp.dll
+D:\NET\MVC\appMVC\bin\Debug\net8.0\System.Text.Json.dll

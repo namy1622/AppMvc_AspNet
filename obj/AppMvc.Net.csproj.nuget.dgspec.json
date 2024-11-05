@@ -149,6 +149,10 @@
             "bogus": {
               "target": "Package",
               "version": "[35.6.1, )"
+            },
+            "elFinder.NetCore": {
+              "target": "Package",
+              "version": "[1.4.1, )"
             }
           },
           "imports": [
