@@ -1,5 +1,4 @@
 D:\NET\MVC\appMVC\bin\Debug\net8.0\appsettings.Development.json
-D:\NET\MVC\appMVC\bin\Debug\net8.0\appsettings.json
 D:\NET\MVC\appMVC\bin\Debug\net8.0\libman.json
 D:\NET\MVC\appMVC\bin\Debug\net8.0\package-lock.json
 D:\NET\MVC\appMVC\bin\Debug\net8.0\package.json
@@ -311,3 +310,5 @@ D:\NET\MVC\appMVC\obj\Debug\net8.0\refint\AppMvc.Net.dll
 D:\NET\MVC\appMVC\obj\Debug\net8.0\AppMvc.Net.pdb
 D:\NET\MVC\appMVC\obj\Debug\net8.0\AppMvc.Net.genruntimeconfig.cache
 D:\NET\MVC\appMVC\obj\Debug\net8.0\ref\AppMvc.Net.dll
+D:\NET\MVC\appMVC\bin\Debug\net8.0\appsettings.json
+D:\NET\MVC\appMVC\bin\Debug\net8.0\Bogus.dll

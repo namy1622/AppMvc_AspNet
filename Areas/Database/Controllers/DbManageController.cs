@@ -1,5 +1,7 @@
 using App.Data;
 using App.Models;
+using App.Models.Blog;
+using Bogus;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -75,7 +77,7 @@ namespace App.Areas.Database.Controllers
             }
 
             //admin, pass = admin123, admin@example.com
-            var useradmin = await _userManager.FindByEmailAsync("admin");
+            var useradmin = await _userManager.FindByEmailAsync("admin@example.com");
             if(useradmin == null){
                 useradmin = new AppUser(){
                     UserName = "admin",
@@ -87,9 +89,80 @@ namespace App.Areas.Database.Controllers
                 await _userManager.AddToRoleAsync(useradmin, RoleName.Administrator);
             }
 
+            SeedPostCategory();
+
             StatusMessage = "Da Seed database";
             return RedirectToAction("Index");
         }
 
+        private void SeedPostCategory(){
+
+            // trước khi SeedData thì kiểm tra có dl được seed trước đó ko
+            // nếu có thì xóa nó đi trước 
+            _dbContext.Categories.RemoveRange(_dbContext.Categories.Where(c => c.Description.Contains("[fakeData]")));
+            _dbContext.Posts.RemoveRange(_dbContext.Posts.Where(p => p.Description.Contains("[fakeData]")));
+
+    // PHAI THEM THU VIEN BOGUS DE PHAT SINH DU LIEU
+    // dotnet add package bogus
+            var fakeCategory = new Faker<Category>();
+            int cm = 1;
+            fakeCategory.RuleFor(c => c.Title, fk => $"CM{cm++}" + fk.Lorem.Sentence(1,2).Trim('.'));
+            fakeCategory.RuleFor(c => c.Description, fk => fk.Lorem.Sentence(5) + "[fakeData]");
+            fakeCategory.RuleFor(c => c.Slug, fk => fk.Lorem.Slug());
+
+            var cate1 = fakeCategory.Generate();
+                var cate11 = fakeCategory.Generate();
+                var cate12 = fakeCategory.Generate();
+            var cate2 = fakeCategory.Generate();
+                var cate21 = fakeCategory.Generate();
+                var cate22 = fakeCategory.Generate();
+
+            cate11.ParentCategory  = cate1;
+            cate12.ParentCategory = cate1;
+            cate21.ParentCategory = cate2;
+            cate22.ParentCategory = cate2;
+
+            var categories = new Category[]{ cate1, cate2, cate12, cate11, cate21, cate22};
+            
+            _dbContext.Categories.AddRange(categories);
+
+            //---------------
+            // phat sinh ngau nhien du liệu cho POST
+            var rCateIndex = new Random();
+            int bv = 1;
+
+            var user = _userManager.GetUserAsync(this.User).Result;
+
+             if (user == null) throw new Exception("User chưa đăng nhập. Không thể lấy Id.");
+            var fakePost = new Faker<Post>();
+
+            fakePost.RuleFor(p => p.AuthorId, f => user.Id);
+            
+            fakePost.RuleFor(p => p.Content, f => f.Lorem.Paragraphs(7) + "[fakeData]");
+            fakePost.RuleFor(p => p.DateCreated, f => f.Date.Between(new DateTime(2021,12,31), new DateTime(2025, 12,31)));
+            fakePost.RuleFor(p => p.Description, f => f.Lorem.Sentence(3));
+            fakePost.RuleFor(p => p.Published, f => true);
+            fakePost.RuleFor(p => p.Slug, f => f.Lorem.Slug());
+            fakePost.RuleFor(p => p.Title, f => $"Bai {bv++} " + f.Lorem.Sentence(3,4).Trim('.'));
+
+            List<Post> posts = new List<Post>();
+            List<PostCategory> post_categories = new List<PostCategory>();
+
+            for (int i = 0; i<40; i++){
+                var post = fakePost.Generate();
+                post.DateUpdated = post.DateCreated;
+
+                posts.Add(post);
+                post_categories.Add(new PostCategory(){
+                    Post = post,
+                    Category = categories[rCateIndex.Next(5)]
+                });
+            }
+
+            _dbContext.AddRange(posts);
+            _dbContext.AddRange(post_categories);
+            //---------------------
+            _dbContext.SaveChanges();
+        }
     }
 }

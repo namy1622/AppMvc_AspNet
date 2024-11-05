@@ -3,7 +3,7 @@
 @inject AdminSidebarService _AdminSidebarService
 @{
     ViewData["Title"] = "Sửa đổi chuyên mục";
-    Layout =  "/Views/Shared/_LayoutAdmin.cshtml";
+   // Layout =  "/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 
@@ -52,7 +52,7 @@
     var summernote  = new App.Models.Summernote("#Description");
 }
 <partial name="_Summernote" model="summernote" />
-
+@* 
 @{
     _AdminSidebarService.SetActive("Category", "Index", "Blog");
 }
@@ -60,4 +60,4 @@
 @section Sidebar
 {
     @Html.Raw(_AdminSidebarService.renderHtml())
-}
+} *@

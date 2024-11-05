@@ -145,6 +145,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "bogus": {
+              "target": "Package",
+              "version": "[35.6.1, )"
             }
           },
           "imports": [

@@ -29,14 +29,16 @@ namespace App.Models.Blog {
             [Display(Name = "Xuất bản")]
             public bool Published {set; get;}
 
-           // public List<PostCategory>  PostCategories { get; set; }
+            [Display(Name = "TEST")]
+            public List<PostCategory>?  PostCategories { get; set; }
 
             // [Required]
-            [Display(Name = "Tác giả")]
-            public string AuthorId {set; get;}
+            [Display(Name = "Tác giả_id")]
+            public string? AuthorId {set; get;}
+
             [ForeignKey("AuthorId")]
             [Display(Name = "Tác giả")]
-            public AppUser Author {set; get;}
+            public AppUser? Author {set; get;}
 
 
 
