@@ -1,5 +1,5 @@
 .app-navbar{
-    background: rgba(0,0,0, 0.7);
+    background: #3404a5b3;
     .text-dark{
         color: #b9c3ce !important;
         &:hover{
@@ -8,9 +8,41 @@
 
     }
     .navbar-brand{
-        color: #a57dea;
+        color: #fefeff;
         &:hover{
             color: #d727da !important;
         }
+    }
+    .dropdown-toggle{
+        border-color: #24e46e;
+        border-width: 5px;
+        color: white;
+    }
+  }
+
+  .categorysidebar{
+    ul, li{
+        list-style: none;
+        padding-left: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        &:hover{
+            color: rgb(3, 2, 74);
+        }
+        &.active{
+            color: #ed6a7e;
+        }
+ 
+    }
+
+    >ul>li>a { font-weight: bold;}
+
+    h2{
+        font-size: 1.4em;
+        text-transform: uppercase;
+        border-bottom: 1px solid blue;
+        padding-bottom: 5px;
     }
   }

@@ -1,138 +1,259 @@
-// using System;
-// using System.Collections.Generic;
-// using System.Linq;
-// using System.Threading.Tasks;
-// using App.Models;
-// using App.Models.Blog;
-// using Microsoft.AspNetCore.Mvc;
-// using Microsoft.EntityFrameworkCore;
-// using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using App.Models;
+using App.Models.Blog;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
-// namespace AppMvc.Net.Areas.Blog.Controllers
-// {
-//     [Area("Blog")]
-//     public class ViewPostController : Controller
-//     {
-//         private readonly ILogger<ViewPostController> _logger;
-//         private readonly AppDbContext _context;
+namespace AppMvc.Net.Areas.Blog.Controllers
+{
+    [Area("Blog")]
+    public class ViewPostController : Controller
+    {
+        private readonly ILogger<ViewPostController> _logger;
+        private readonly AppDbContext _context;
 
-//         public ViewPostController(ILogger<ViewPostController> logger, AppDbContext context)
-//         {
-//             _logger = logger;
-//             _context = context;
-//         }
-
-//         // /post/
-//         // /post/{categoryslug?}
-//         [Route("/post/{categoryslug?}")]
-//         public IActionResult Index(string categoryslug, [FromQuery(Name = "p")]int currentPage, int pagesize)
-//         {
-//             var categories = GetCategories();
-//             ViewBag.categories = categories;
-//             ViewBag.categoryslug = categoryslug;
-
-//             Category category = null;
-
-//             if (!string.IsNullOrEmpty(categoryslug))    
-//             {
-//                 category = _context.Categories.Where(c => c.Slug == categoryslug)
-//                                     .Include(c => c.CategoryChildren)
-//                                     .FirstOrDefault();
-
-//                 if (category == null)
-//                 {
-//                     return NotFound("Không thấy category");
-//                 }                    
-//             }
-
-//             var posts = _context.Posts
-//                                 .Include(p => p.Author)
-//                                 .Include(p => p.PostCategories)
-//                                 .ThenInclude(p => p.Category)
-//                                 .AsQueryable();
-
-//             posts.OrderByDescending(p => p.DateUpdated);
-
-//             if (category != null)
-//             {
-//                 var ids = new List<int>();
-//                 category.ChildCategoryIDs(null, ids);
-//                 ids.Add(category.Id);
+        public ViewPostController(ILogger<ViewPostController> logger, AppDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
 
 
-//                 posts = posts.Where(p => p.PostCategories.Where(pc => ids.Contains(pc.CategoryID)).Any());
+        // /post/
+        // /post/{categoryslug?}
+        [Route("/post/{categoryslug?}")]
+        public IActionResult Index(string categoryslug, [FromQuery(Name = "p")] int currentPage, int pagesize)
+        {
+            var categories = GetCategories();
+            ViewBag.categories = categories;
+            ViewBag.categoryslug = categoryslug;
+
+            //----------------------
+            //-- xử lý khi bấm vào 1 category
+            Category category = null;
+
+            if(!string.IsNullOrEmpty(categoryslug)){
+                category = _context.Categories.Where(c => c.Slug == categoryslug)
+                                                .Include(c => c.CategoryChildren)
+                                                .FirstOrDefault();
+
+                if(category == null){
+                    return NotFound("Không thấy Category");
+                }
+            }
+
+            var posts = _context.Posts
+                                .Include(p => p.Author)
+                                .Include(p => p.PostCategories)
+                                .ThenInclude(p => p.Category)
+                                .AsQueryable();
+            posts.OrderByDescending(p => p.DateUpdated); // sx giamr theo ngay update
+
+            // lọc lấy category gồm bài viết cha và con 
+            if(category != null){
+                var ids = new List<int>();
+                category.ChildCategoryIDs(null, ids);
+                ids.Add(category.Id);
+
+                posts = posts.Where(p => p.PostCategories.Where(pc => ids.Contains(pc.CategoryID)).Any());
+            }
+
+            // PHÂN TRANG ----------------
+            int totalPosts =  posts.Count();
+            if (pagesize <= 0) pagesize = 10;
+            int countPages = (int)Math.Ceiling((double)totalPosts / pagesize);
+
+            if (currentPage > countPages) currentPage = countPages;
+            if (currentPage < 1) currentPage = 1;
+
+            var pagingModel = new PagingModel()
+            {
+                countpages = countPages,
+                currentpage = currentPage,
+
+                // delegate phat sinh ra url
+                generateUrl = (pageNumber) => Url.Action("Index", new
+                {
+                    p = pageNumber,
+                    pagesize = pagesize
+                })
+            };
+
+            ViewBag.pagingModel = pagingModel;
+            ViewBag.totalPosts = totalPosts;
+            ViewBag.category = category;
+
+           // ViewBag.postIndex = (currentPage - 1) * pagesize;
+
+            var postsInPage =  posts.Skip((currentPage - 1) * pagesize)
+                             .Take(pagesize);
+                             
+        // -- END PHÂN TRANG-------------
+            //------------
+            return View(postsInPage.ToList());
+        }
 
 
-//             }
+        //
+        [Route("/post/{postslug}.html")]
+        public IActionResult Detail(string postslug)
+        {
+            var categories = GetCategories();
+            ViewBag.categories = categories;
 
-//             int totalPosts = posts.Count();  
-//             if (pagesize <=0) pagesize = 10;
-//             int countPages = (int)Math.Ceiling((double)totalPosts / pagesize);
- 
-//             if (currentPage > countPages) currentPage = countPages;     
-//             if (currentPage < 1) currentPage = 1; 
+            var post = _context.Posts.Where(p => p.Slug == postslug)
+                                    .Include(p => p.Author)
+                                    .Include(p => p.PostCategories)
+                                    .ThenInclude(pc => pc.Category)
+                                    .FirstOrDefault();
+                                
+            if(post == null){
+                return NotFound("Khong tim thay bai viet");
+            }
 
-//             var pagingModel = new PagingModel()
-//             {
-//                 countpages = countPages,
-//                 currentpage = currentPage,
-//                 generateUrl = (pageNumber) => Url.Action("Index", new {
-//                     p =  pageNumber,
-//                     pagesize = pagesize
-//                 })
-//             };
+            Category category = post.PostCategories.FirstOrDefault()?.Category;
+            ViewBag.category = category;
+            
+            // ortherPosts -> taapj hop cac bai Post co cung Chuyen Muc(Category)
+            var otherPosts = _context.Posts.Where(p => p.PostCategories.Any(c => c.Category.Id == category.Id))
+                                   .Where(p => p.PostId != post.PostId)
+                                   .OrderByDescending(p => p.DateUpdated)
+                                   .Take(5);
+            ViewBag.otherPosts = otherPosts;
 
-//             var postsInPage = posts.Skip((currentPage - 1) * pagesize)
-//                              .Take(pagesize);   
+            
+
+            return View(post);
+        }
+
+        private List<Category> GetCategories()
+        {
+            var categories = _context.Categories
+                            .Include(c => c.CategoryChildren)
+                            .AsEnumerable()
+                            .Where(c => c.ParentCategory == null)
+                            .ToList();
+
+            return categories;
+        }
+
+    }
+}
 
 
-//             ViewBag.pagingModel = pagingModel;
-//             ViewBag.totalPosts = totalPosts; 
+// /post/
+// /post/{categoryslug?}
+//    [Route("/post/{categoryslug?}")]
+//public IActionResult Index(string categoryslug, [FromQuery(Name = "p")] int currentPage, int pagesize)
+//{
+//    var categories = GetCategories();
+//    ViewBag.categories = categories;
+//    ViewBag.categoryslug = categoryslug;
+
+//    Category category = null;
+
+//    if (!string.IsNullOrEmpty(categoryslug))
+//    {
+//        category = _context.Categories.Where(c => c.Slug == categoryslug)
+//                            .Include(c => c.CategoryChildren)
+//                            .FirstOrDefault();
+
+//        if (category == null)
+//        {
+//            return NotFound("Không thấy category");
+//        }
+//    }
+
+//    var posts = _context.Posts
+//                        .Include(p => p.Author)
+//                        .Include(p => p.PostCategories)
+//                        .ThenInclude(p => p.Category)
+//                        .AsQueryable();
+
+//    posts.OrderByDescending(p => p.DateUpdated);
+
+//    if (category != null)
+//    {
+//        var ids = new List<int>();
+//        category.ChildCategoryIDs(null, ids);
+//        ids.Add(category.Id);
 
 
-                 
-//             ViewBag.category = category;
-//             return View(postsInPage.ToList());
-//         }
+//        posts = posts.Where(p => p.PostCategories.Where(pc => ids.Contains(pc.CategoryID)).Any());
 
-//         [Route("/post/{postslug}.html")]
-//         public IActionResult Detail(string postslug)
-//         {
-//             var categories = GetCategories();
-//             ViewBag.categories = categories;
 
-//             var post = _context.Posts.Where(p => p.Slug == postslug)
-//                                .Include(p => p.Author)
-//                                .Include(p => p.PostCategories)
-//                                .ThenInclude(pc => pc.Category)
-//                                .FirstOrDefault();
+//    }
 
-//             if (post == null)
-//             {
-//                 return NotFound("Không thấy bài viết");
-//             }            
+//    int totalPosts = posts.Count();
+//    if (pagesize <= 0) pagesize = 10;
+//    int countPages = (int)Math.Ceiling((double)totalPosts / pagesize);
 
-//             Category category = post.PostCategories.FirstOrDefault()?.Category;
-//             ViewBag.category = category;
+//    if (currentPage > countPages) currentPage = countPages;
+//    if (currentPage < 1) currentPage = 1;
 
-//             var otherPosts = _context.Posts.Where(p => p.PostCategories.Any(c => c.Category.Id == category.Id))
-//                                             .Where(p => p.PostId != post.PostId)
-//                                             .OrderByDescending(p => p.DateUpdated)
-//                                             .Take(5);
-//             ViewBag.otherPosts = otherPosts;                                
+//    var pagingModel = new PagingModel()
+//    {
+//        countpages = countPages,
+//        currentpage = currentPage,
+//        generateUrl = (pageNumber) => Url.Action("Index", new
+//        {
+//            p = pageNumber,
+//            pagesize = pagesize
+//        })
+//    };
 
-//             return View(post);
-//         }
+//    var postsInPage = posts.Skip((currentPage - 1) * pagesize)
+//                     .Take(pagesize);
 
-//         private List<Category> GetCategories()
-//         {
-//             var categories = _context.Categories
-//                             .Include(c => c.CategoryChildren)
-//                             .AsEnumerable()
-//                             .Where(c => c.ParentCategory == null)
-//                             .ToList();
-//             return categories;                
-//         }
 
-//     }
-// }
+//    ViewBag.pagingModel = pagingModel;
+//    ViewBag.totalPosts = totalPosts;
+
+
+
+//    ViewBag.category = category;
+//    return View(postsInPage.ToList());
+//}
+
+//[Route("/post/{postslug}.html")]
+//public IActionResult Detail(string postslug)
+//{
+//    var categories = GetCategories();
+//    ViewBag.categories = categories;
+
+//    var post = _context.Posts.Where(p => p.Slug == postslug)
+//                       .Include(p => p.Author)
+//                       .Include(p => p.PostCategories)
+//                       .ThenInclude(pc => pc.Category)
+//                       .FirstOrDefault();
+
+//    if (post == null)
+//    {
+//        return NotFound("Không thấy bài viết");
+//    }
+
+//    Category category = post.PostCategories.FirstOrDefault()?.Category;
+//    ViewBag.category = category;
+
+//    var otherPosts = _context.Posts.Where(p => p.PostCategories.Any(c => c.Category.Id == category.Id))
+//                                    .Where(p => p.PostId != post.PostId)
+//                                    .OrderByDescending(p => p.DateUpdated)
+//                                    .Take(5);
+//    ViewBag.otherPosts = otherPosts;
+
+//    return View(post);
+//}
+
+//private List<Category> GetCategories()
+//{
+//    var categories = _context.Categories
+//                    .Include(c => c.CategoryChildren)
+//                    .AsEnumerable()
+//                    .Where(c => c.ParentCategory == null)
+//                    .ToList();
+//    return categories;
+//}

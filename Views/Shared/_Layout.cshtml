@@ -35,11 +35,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Database" asp-controller="DbManage" asp-action="Index">DB_Manage</a>
                         </li>
-                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="Contact" asp-controller="Contact" asp-action="SendContact">Lien he</a>
                         </li>
-                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="Blog" asp-controller="Category" asp-action="Index">Lien he</a>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Blog" asp-controller="Category" asp-action="Index">Catagory</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Blog" asp-controller="ViewPost" asp-action="Index">Blog</a>
                         </li>
                     </ul>
 
@@ -57,12 +61,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top fixed-bottom footer text-muted app-footer">
         <div class="container">
             &copy; 2024 - App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
    
+    
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

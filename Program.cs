@@ -156,10 +156,18 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //--------------
+//app.UseStaticFiles(new StaticFileOptions()
+//{
+//    FileProvider = new PhysicalFileProvider(
+//        Path.Combine(Directory.GetCurrentDirectory(), "Uploads")
+//       ),
+//    RequestPath = "/contents"
+//});
+
 app.UseStaticFiles(new StaticFileOptions()
 {
     FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), "Uploads")
+        Path.Combine(builder.Environment.ContentRootPath, "Uploads")
        ),
     RequestPath = "/contents"
 });

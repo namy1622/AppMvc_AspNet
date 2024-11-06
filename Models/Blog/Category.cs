@@ -42,5 +42,31 @@ namespace App.Models.Blog
         {
             throw new NotImplementedException();
         }
+
+
+        // hamf chon theo id( nếu category hiện tại có child thì thêm cả nó vào)
+        public void ChildCategoryIDs(ICollection<Category> childcates, List<int> lists){
+            if(childcates == null){
+                childcates = this.CategoryChildren;
+            }
+
+            foreach(Category category in childcates){
+                lists.Add(category.Id);
+                ChildCategoryIDs(category.CategoryChildren, lists);
+            }
+        }
+
+        // lay ds danh muc cha
+        public List<Category> ListParents(){
+            List<Category> li = new List<Category>();
+            var parent = this.ParentCategory;
+            while(parent != null){
+                li.Add(parent);
+                parent = parent.ParentCategory;
+            }
+
+            li.Reverse();
+            return li;
+        }
     }
 }

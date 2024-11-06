@@ -19,7 +19,11 @@
 
             var options = {
                 baseUrl: "@Url.Content("~/lib/elfinder/")",
+
                 url: "@Url.Action("Connector")",
+
+                @*url: "@Url.Action("/file-manager-connector")",*@
+
                 rememberLastDir: false,
                 commands: myCommands,
                 lang: 'vi',
@@ -30,7 +34,7 @@
                         ['home', 'up'],
                         ['mkdir', 'mkfile', 'upload'],
                         ['open', 'download'],
-                        ['undo', 'redo'],
+                        ['undo', 'redo'],``
                         ['info'],
                         ['quicklook'],
                         ['copy', 'cut', 'paste'],
@@ -46,3 +50,6 @@
             $('#elfinder').elfinder(options).elfinder('instance');
         });
 </script>
+
+
+<marquee class="w-500" style="font-size:50px; font-family:'Times New Roman', Times, serif; font-weight:400">Xin chao</marquee>
